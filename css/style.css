@@ -142,30 +142,40 @@ body{
 }
 
 @media (min-width:970px){
+    body{
+        background-color: var(--Dark-Slate-Grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .container{
-        max-width: 1440px;
+        background-color: var(--White);
+        border-radius: 25px;
+        max-width: 1000px;
+        max-height: 550px;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
-        margin-top: 40px;   
+        justify-items: space-around;
+        margin-top: 40px;
+        padding: 20px;   
     }
 
     #form{
-        min-width: 500px;
+        min-width: 400px;
         display: flex;
         flex-direction: column;
-        padding: 20px;
     }
 
     #form > .title{
         text-align: center;
-        font-size: 70px;
+        font-size: 2.5rem;
     }
     .img-contain{
         grid-column: 2 ;
-        height:593px;
+        height:520px;
         width: 400px;
-        margin: auto;
+        margin-bottom: 20px;
+        margin-left: 20px;
         background: url('../assets/images/illustration-sign-up-desktop.svg');
         /* border-radius: 20px; */
     }
